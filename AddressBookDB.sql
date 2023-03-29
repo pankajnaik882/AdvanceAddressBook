@@ -40,3 +40,13 @@ select Count(*) as Size_Of_Address_Book_By_State from Address_Book  where State=
 
 --UC8 Ability to retrieve entries sorted alphabetically by Person’s name for a given city
 Select * from Address_Book where City='Ghaziabad' Order by First_Name;
+
+--UC9 Ability to identify each Address Book with name and Type.
+alter table Address_Book add Address_Book_Name varchar(300), Address_Book_Type varchar(100);
+Update Address_Book set Address_Book_Name='Profession_List', Address_Book_Type='Profession' where First_Name='Anmol';
+Update Address_Book set Address_Book_Name='Friend_List', Address_Book_Type='Friend' where First_Name='Riya';
+Update Address_Book set Address_Book_Name='Family_List', Address_Book_Type='Family' where First_Name='Piyush';
+Update Address_Book set Address_Book_Name='Family_List', Address_Book_Type='Family' where First_Name='Amit';
+Update Address_Book set Address_Book_Name='Friend_List', Address_Book_Type='Friend' where First_Name='Monika';
+Select * from Address_Book where Address_Book_Name='Family_List';
+Select * from Address_Book where Address_Book_Type='Friend';
