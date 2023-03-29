@@ -19,3 +19,12 @@ insert into Address_Book values
 
 --View contacts in address book
 select * from Address_Book;
+
+
+--UC4 Ability to edit existing contact person using their name
+update Address_Book set City='Ghaziabad' where First_Name='Anmol';
+update Address_Book set City='Ghaziabad' where First_Name='Manisha';
+update Address_Book set City='Ghaziabad' where First_Name='Piyush';
+
+--UC5 Ability to delete a person using person's name
+delete from Address_Book where First_Name='Manisha';
