@@ -26,6 +26,13 @@ update Address_Book set City='Ghaziabad' where First_Name='Anmol';
 update Address_Book set City='Ghaziabad' where First_Name='Manisha';
 update Address_Book set City='Ghaziabad' where First_Name='Piyush';
 
-
 --UC5 Ability to delete a person using person's name
 delete from Address_Book where First_Name='Manisha';
+
+--UC6 Ability to Retrieve Person belonging to a City or State from the Address Book
+Select * from Address_Book where City='Ghaziabad';
+Select * from Address_Book where State='UP';
+
+--UC7 Ability to understand the size of address book by City and State
+select Count(*) as Size_Of_Address_Book_By_City from Address_Book  where City='Ghaziabad';
+select Count(*) as Size_Of_Address_Book_By_State from Address_Book  where State='UP';
