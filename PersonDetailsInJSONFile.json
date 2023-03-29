@@ -8,5 +8,15 @@
     "zipcode": 55,
     "phoneNumber": 55,
     "email": "ss"
+  },
+  {
+    "firstName": "Riya",
+    "lastName": "Sharma",
+    "address": "Murari nagar ",
+    "city": "Khurja",
+    "state": "Uttar Pradesh ",
+    "zipcode": 215487,
+    "phoneNumber": 7805982524,
+    "email": "riya147@gmail.com"
   }
 ]
