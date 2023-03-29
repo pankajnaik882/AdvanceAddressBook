@@ -36,3 +36,7 @@ Select * from Address_Book where State='UP';
 --UC7 Ability to understand the size of address book by City and State
 select Count(*) as Size_Of_Address_Book_By_City from Address_Book  where City='Ghaziabad';
 select Count(*) as Size_Of_Address_Book_By_State from Address_Book  where State='UP';
+
+
+--UC8 Ability to retrieve entries sorted alphabetically by Person’s name for a given city
+Select * from Address_Book where City='Ghaziabad' Order by First_Name;
