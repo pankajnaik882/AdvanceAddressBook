@@ -30,7 +30,8 @@
                     "17.Retrieve all entites from database\n" +
                      "18.Update city by using firstname\n" +
                     "19.Retrieve contacts add at particular date in address book\n" +
-                     "30.Exit\n");
+                    "20.Retrieve Number of Contacts by city or state\n" +
+                    "30.Exit\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -134,6 +135,11 @@
                         Console.ReadLine();
                         Console.Write("\nPress any key to continue...... ");
                         Console.Clear();
+                        break;
+                    case 20:
+                        Console.Clear();
+                        Console.WriteLine("Retrieve by city or state\n-------------------------------------------");
+                        AddressRepository.RetrieveByCityOrState(contacts);
                         break;
                     case 30:
                         Console.Clear();
